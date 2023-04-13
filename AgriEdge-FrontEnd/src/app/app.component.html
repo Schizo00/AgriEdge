@@ -2,24 +2,16 @@
   <div class="bg-card">
     <nav class="navbar-expand-sm">
         <div class="d-flex flex-row-reverse navigation">
-            <a href="#" class="p-2 mx-4" ><img src=".\assets\hamburgerMenu.svg" width="25px" height="16px" id="ham" alt="ham"></a>
-            <a href="#" class="p-2 ms-4">dashboard</a>
-            <a href="#" class="p-2 ms-4">features</a>
-            <a href="#" class="p-2 ms-4">login</a>
-            <a href="#" class="p-2 ms-2 ms-4 me-auto"><img src=".\assets\Logo.svg" width="60px" height="37.5px" id="ham" alt="ham"></a>
+            <a href="#" class="p-2 mx-4" routerLink="/"><img src=".\assets\hamburgerMenu.svg" width="25px" height="16px" id="ham" alt="ham"></a>
+            <a href="#" class="p-2 ms-4" routerLink="/dashboard">dashboard</a>
+            <a href="#" class="p-2 ms-4" routerLink="/features">features</a>
+            <a href="#" class="p-2 ms-4" routerLink="/login">login</a>
+            <a href="#" class="p-2 ms-2 ms-4 me-auto" routerLink="/"><img src=".\assets\Logo.svg" width="60px" height="37.5px" id="ham" alt="ham"></a>
         </div>
     </nav>
 
-    <div class="row h-100 d-flex align-items-center justify-content-end pb-5">
-      <div class="col p-4">
-        <img src=".\assets\Logo.svg" class="ms-auto row " width="230px" height="144px" id="ham" alt="ham">
-        <div class="ms-auto row text-end"><h3>Revolutionize Your Farming with Real-time<br> Edge AI Diagnosis and Weather<br> Forecasting</h3>
-        </div>
-      </div>
-      
-      <div class="col p-4">
-        <app-login-card></app-login-card>
-      </div>
-    </div>
+  <!-- <app-login-page></app-login-page> -->
+  <!-- <app-dashboard></app-dashboard> -->
+  <router-outlet></router-outlet>
   </div>
 </div>

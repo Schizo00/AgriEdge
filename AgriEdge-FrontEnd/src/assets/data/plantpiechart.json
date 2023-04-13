@@ -1,0 +1,32 @@
+{
+   "title":{
+      "left":"center",
+      "top":"center"
+   },
+   "series":[
+      {
+         "startAngle":345,
+         "type":"pie",
+         "labelLine":{
+            "show":false
+         },
+         "data":[
+            {
+               "value":335
+            },
+            {
+               "value":512
+            }
+         ],
+         "radius":[
+            "50%",
+            "65%"
+         ],
+         "color":[
+            "#8DFF00",
+            "#F02E2E"
+         ]
+      }
+   ],
+   "isUp" : true
+}
