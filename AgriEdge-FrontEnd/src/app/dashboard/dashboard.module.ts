@@ -14,16 +14,7 @@ import { LinechartComponent } from './linechart/linechart.component';
 import { PiechartComponent } from './piechart/piechart.component';
 import { AreachartComponent } from './areachart/areachart.component';
 import { MatTableModule } from '@angular/material/table';
-import { MatInputModule} from '@angular/material/input';
-import { MatPaginatorModule} from '@angular/material/paginator'
-import { MatSortModule} from '@angular/material/sort'
 import { WeathertableComponent } from './weathertable/weathertable.component';
-import { GaugechartComponent } from './gaugechart/gaugechart.component';
-import { FormsModule } from '@angular/forms';
-import {MatSelectModule} from '@angular/material/select';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 
 
 @NgModule({
@@ -38,8 +29,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LinechartComponent,
     PiechartComponent,
     AreachartComponent,
-    WeathertableComponent,
-    GaugechartComponent
+    WeathertableComponent
   ],
   imports: [
     CommonModule,
@@ -52,14 +42,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
        */
       echarts: () => import('echarts'), // or import('./path-to-my-custom-echarts')
     }),
-    MatTableModule,
-    MatFormFieldModule,
-    MatPaginatorModule,
-    MatInputModule,
-    FormsModule,
-    MatSortModule,
-    MatSelectModule,
-    BrowserAnimationsModule
+    MatTableModule
   ],
   exports: [
     PillMenuComponent,
@@ -72,8 +55,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LinechartComponent,
     PiechartComponent,
     AreachartComponent,
-    WeathertableComponent,
-    GaugechartComponent
+    WeathertableComponent
   ]
 })
 export class DashboardModule {

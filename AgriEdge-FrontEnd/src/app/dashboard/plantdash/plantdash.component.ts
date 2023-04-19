@@ -49,7 +49,7 @@ export class PlantdashComponent{
     .then((response) => response.json())
     .then((json) => this.pieData = json)
     .then((json) => this.pieIsUp = (json.isUp))
-
+    .then((json) => (console.log(typeof(this.pieIsUp))))
 
     fetch(this.filePaths[2])
     .then((response) => response.json())

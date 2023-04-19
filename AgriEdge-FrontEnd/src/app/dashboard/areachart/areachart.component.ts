@@ -7,7 +7,7 @@ import { EChartsOption } from 'echarts';
   styleUrls: ['./areachart.component.css']
 })
 export class AreachartComponent {
-
+  filePath = 'assets/data/plantareachart.json'
   @Input() chartOption: EChartsOption = {};
   isUp: boolean = false;
 
