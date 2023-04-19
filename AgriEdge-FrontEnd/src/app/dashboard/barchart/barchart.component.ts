@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class BarchartComponent {
   // constructor(private http: HttpClient) {}
-  filePath = 'assets/data/plantbarchart.json'
+
   @Input() chartOption: EChartsOption = {};
   isUp: boolean = false;
   

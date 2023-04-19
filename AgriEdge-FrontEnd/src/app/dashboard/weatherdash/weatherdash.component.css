@@ -26,5 +26,53 @@
     width: 1325px;
     transform: translate();
     position: relative;
-    left: -39px;
+    left: -78px;
 }
+
+app-gaugechart {
+    position: relative;
+    top: -100px;
+}
+
+app-gaugechart {
+    z-index: 10;
+}
+
+
+.triR {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 26.0px 15px;
+    border-color: transparent transparent #F02E2E transparent;
+    }
+    
+    .triG {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 26.0px 15px 0 15px;
+        border-color: #8cff00 transparent transparent transparent;
+        position: relative;
+        top: 10px;
+    }
+    
+    .tablebox {
+      width: 648px;
+      height: 200px;
+      overflow: scroll;
+      overflow-x: hidden;
+    }
+    
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    
+    thead tr{
+        background-color: white;
+        text-align: center;
+    }
+    
+    td {
+        text-align: center;
+    }
