@@ -1,0 +1,142 @@
+[
+   {
+      "plantID": 1,
+      "xCoord": 10.1234,
+      "yCoord": 20.3456,
+      "diseaseName": "Leaf Spot",
+      "severityLevel": 7
+    },
+    {
+      "plantID": 2,
+      "xCoord": 15.6789,
+      "yCoord": 18.9012,
+      "diseaseName": "Powdery Mildew",
+      "severityLevel": 3
+    },
+    {
+      "plantID": 3,
+      "xCoord": 12.3456,
+      "yCoord": 23.4567,
+      "diseaseName": "Anthracnose",
+      "severityLevel": 9
+    },
+    {
+      "plantID": 4,
+      "xCoord": 16.7890,
+      "yCoord": 21.2345,
+      "diseaseName": "Black Spot",
+      "severityLevel": 5
+    },
+    {
+      "plantID": 5,
+      "xCoord": 13.4567,
+      "yCoord": 17.8901,
+      "diseaseName": "Root Rot",
+      "severityLevel": 8
+    },
+    {
+      "plantID": 6,
+      "xCoord": 18.9012,
+      "yCoord": 15.6789,
+      "diseaseName": "Leaf Spot",
+      "severityLevel": 2
+    },
+    {
+      "plantID": 7,
+      "xCoord": 21.2345,
+      "yCoord": 19.0123,
+      "diseaseName": "Powdery Mildew",
+      "severityLevel": 4
+    },
+    {
+      "plantID": 8,
+      "xCoord": 23.4567,
+      "yCoord": 16.7890,
+      "diseaseName": "Black Spot",
+      "severityLevel": 7
+    },
+    {
+      "plantID": 9,
+      "xCoord": 25.6789,
+      "yCoord": 14.5678,
+      "diseaseName": "Anthracnose",
+      "severityLevel": 8
+    },
+    {
+      "plantID":  10 ,
+      "xCoord":  29.0123 ,
+      "yCoord":  18.9012 ,
+      "diseaseName": "Leaf Spot",
+      "severityLevel":  6 
+    },
+    {
+      "plantID":  11 ,
+      "xCoord":  30.3456 ,
+      "yCoord":  21.2345 ,
+      "diseaseName": "Powdery Mildew",
+      "severityLevel":  3 
+    },
+    {
+      "plantID":  12 ,
+      "xCoord":  27.9012 ,
+      "yCoord":  23.4567 ,
+      "diseaseName": "Black Spot",
+      "severityLevel":  4 
+    },
+    {
+      "plantID":  13 ,
+      "xCoord":  32.3456 ,
+      "yCoord":  19.0123 ,
+      "diseaseName": "Root Rot",
+      "severityLevel":  9 
+    },
+    {
+      "plantID": 14,
+      "xCoord": 25.6789,
+      "yCoord": 28.9012,
+      "diseaseName": "Anthracnose",
+      "severityLevel":  6 
+    },
+    {
+      "plantID": 15,
+      "xCoord": 22.3456,
+      "yCoord": 27.4567,
+      "diseaseName": "Black Spot",
+      "severityLevel":  2 
+    },
+    {
+      "plantID": 16,
+      "xCoord": 26.7890,
+      "yCoord": 25.2345,
+      "diseaseName": "Powdery Mildew",
+      "severityLevel":  4 
+    },
+    {
+      "plantID": 17,
+      "xCoord": 23.4567,
+      "yCoord": 20.8901,
+      "diseaseName": "Leaf Spot",
+      "severityLevel":  9 
+    },
+    {
+      "plantID": 18,
+      "xCoord": 21.2345,
+      "yCoord": 22.6789,
+      "diseaseName": "Root Rot",
+      "severityLevel":  8 
+    },
+    {
+      "plantID": 19,
+      "xCoord": 12.3456,
+      "yCoord": 34.5678,
+      "diseaseName": "Powdery Mildew",
+      "severityLevel":  5 
+    },
+    {
+      "plantID": 20,
+      "xCoord": 23.4567,
+      "yCoord": 45.6789,
+      "diseaseName": "Black Spot",
+      "severityLevel":  6 
+    }
+ ]

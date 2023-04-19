@@ -24,6 +24,8 @@
     width: 948px;
     background-color: white;
     border-radius: 20px;
+    position: relative;
+    top: -18px;
 }
 
 .topic {
@@ -42,3 +44,80 @@
     position: relative;
     left: -78px;
 }
+
+
+.triR {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 26.0px 15px;
+    border-color: transparent transparent #F02E2E transparent;
+    }
+    
+.triG {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 26.0px 15px 0 15px;
+    border-color: #8cff00 transparent transparent transparent;
+    position: relative;
+    top: 10px;
+}
+
+.tablebox {
+    width: 648px;
+    height: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+thead tr{
+    background-color: white;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+.dropd {
+    width: 226px;
+    height: 36px;
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    position: relative;
+    top: -35px;
+    left: 358px;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+}
+
+.dropd:focus, .dropd:active:focus, .dropd.active.focus  {
+    box-shadow: none !important;
+    background-color: #d9d9d9;
+    outline: none !important;
+    border: none;
+}
+
+.p-cont.linechart {
+    height: 250px;
+    width: 900px;
+    position: relative;
+    top: -100px;
+}
+
+
+
+/* .btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+    box-shadow: none !important;
+    background-color: #d9d9d9;
+    outline: none !important;
+    border: none;
+  } */

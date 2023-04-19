@@ -7,8 +7,7 @@ import { EChartsOption } from 'echarts';
   styleUrls: ['./piechart.component.css']
 })
 export class PiechartComponent {
-
-  filePath = 'assets/data/plantpiechart.json'
+  
   @Input() chartOption: EChartsOption = {};
   isUp!: boolean;
 

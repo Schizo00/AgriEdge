@@ -1,0 +1,43 @@
+{
+   "xAxis":{
+      "data":[
+         "Mon",
+         "Tue",
+         "Wed",
+         "Thu",
+         "Fri",
+         "Sat",
+         "Sun"
+      ],
+      "splitLine":{
+         "show":false
+      }
+   },
+   "yAxis":{
+      "axisLabel":{
+         "show":false
+      },
+      "splitLine":{
+         "show":false
+      }
+   },
+   "series":[
+      {
+         "type":"line",
+         "data":[
+            0,
+            1,
+            1,
+            2,
+            2,
+            3,
+            5
+         ],
+         "itemStyle":{
+            "color":"#0099FF"
+         },
+         "smooth":true
+      }
+   ],
+   "isUp": true
+}
