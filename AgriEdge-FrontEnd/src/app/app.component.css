@@ -1,0 +1,18 @@
+.bg-card {
+    height: 848px;
+    width: 1325px;
+    background-color: #F1EFEF;
+    position: absolute;
+    margin: auto;
+    border-radius: 25px;
+}
+
+body {
+    height: 100%;
+}
+
+a:hover{
+    color: black;
+    filter: drop-shadow(0px 0px 10px #6B6B6B);
+
+}

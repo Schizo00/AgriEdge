@@ -1,0 +1,55 @@
+<div class="d-flex">
+    <app-pill-menu class="pill"></app-pill-menu>
+    <div class="d-flex flex-column">
+        <div class="d-flex rowdim justify-content-evenly mt-5">
+            <div class="rect d-flex flex-column">
+                <h1 class="topic mt-2 ms-3 mb-0">Predicted Daily Weather Summary</h1>
+                <app-weathertable *ngIf="weatherData" [weatherData]="weatherData"></app-weathertable>
+            </div>
+
+            <div class="sq d-flex flex-column">
+                <h1 class="topic mt-2 ms-3 mb-0">Humidity</h1>
+                <div class="d-flex flex-row">
+                    <h1 class="info ms-3">71%</h1>
+                    <div [ngClass]="barIsUp ? 'triR' : 'triG'" class="tri mt-4 pt-2 ms-2"></div>
+                </div>
+                
+                <app-barchart [chartOption]="barData"></app-barchart>
+            </div>
+        
+            
+        </div>
+        
+        <div class="d-flex rowdim justify-content-evenly mt-5">
+            <div class="sq d-flex flex-column">
+                <h1 class="topic mt-2 ms-3 mb-0">Wind Speed</h1>
+                <div class="d-flex flex-row">
+                    <h1 class="info ms-3">8 kmh</h1>
+                    <div [ngClass]="gaugeIsUp ? 'triR' : 'triG'" class="tri mt-4 pt-2 ms-2"></div>
+                </div>
+                <app-gaugechart [chartOption]="gaugeData"></app-gaugechart>
+            </div>
+        
+            <div class="sq d-flex flex-column">
+                <h1 class="topic mt-2 ms-3 mb-0">Temperature</h1>
+                <div class="d-flex flex-row">
+                    <h1 class="info ms-3">32°C</h1>
+                    <div [ngClass]="lineIsUp ? 'triR' : 'triG'" class="tri mt-4 pt-2 ms-2"></div>
+                </div>
+                <app-linechart [chartOption]="lineData"></app-linechart>
+            </div>
+    
+            <div class="sq d-flex flex-column">
+                <h1 class="topic mt-2 ms-3 mb-0">Precipitation</h1>
+                <div class="d-flex flex-row">
+                    <h1 class="info ms-3">1.4cm</h1>
+                    <div [ngClass]="barIsUp2 ? 'triR' : 'triG'" class="tri mt-4 pt-2 ms-2"></div>
+                </div>
+                
+                <app-barchart [chartOption]="barData2"></app-barchart>
+            </div>
+    
+        </div>
+    </div>
+</div>
+

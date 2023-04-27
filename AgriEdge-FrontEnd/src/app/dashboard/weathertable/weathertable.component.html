@@ -1,0 +1,102 @@
+<div class="icon-rect d-flex flex-row justify-content-evenly mt-5" *ngIf="weatherDataLoaded">
+
+    <div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <div *ngFor="let image of images">
+                    <img *ngIf = "image.param === weatherData[0].image" [src] = "image.src" class="mx-3">
+                </div>
+                <h4>{{ weatherData[0].temp }}</h4>
+                <h4 class="bold">{{ weatherData[0].day }}</h4>
+            </div>
+            
+            <div class="vert-line"></div>
+        </div>
+    </div>
+    
+    <div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <div *ngFor="let image of images">
+                    <img *ngIf = "image.param === weatherData[1].image" [src] = "image.src" class="mx-3">
+                </div>
+                <h4>{{ weatherData[1].temp }}</h4>
+                <h4 class="bold">{{ weatherData[1].day }}</h4>
+            </div>
+            
+            <div class="vert-line"></div>
+        </div>
+    </div>
+    
+    <div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <div *ngFor="let image of images">
+                    <img *ngIf = "image.param === weatherData[2].image" [src] = "image.src" class="mx-3">
+                </div>
+                <h4>{{ weatherData[2].temp }}</h4>
+                <h4 class="bold">{{ weatherData[2].day }}</h4>
+            </div>
+            
+            <div class="vert-line"></div>
+        </div>
+    </div>
+    
+    <div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <div *ngFor="let image of images">
+                    <img *ngIf = "image.param === weatherData[3].image" [src] = "image.src" class="mx-3">
+                </div>
+                <h4>{{ weatherData[3].temp }}</h4>
+                <h4 class="bold">{{ weatherData[3].day }}</h4>
+            </div>
+            
+            <div class="vert-line"></div>
+        </div>
+    </div>
+    
+    <div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <div *ngFor="let image of images">
+                    <img *ngIf = "image.param === weatherData[4].image" [src] = "image.src" class="mx-3">
+                </div>
+                <h4>{{ weatherData[4].temp }}</h4>
+                <h4 class="bold">{{ weatherData[4].day }}</h4>
+            </div>
+            
+            <div class="vert-line"></div>
+        </div>
+    </div>
+    
+    <div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <div *ngFor="let image of images">
+                    <img *ngIf = "image.param === weatherData[5].image" [src] = "image.src" class="mx-3">
+                </div>
+                <h4>{{ weatherData[5].temp }}</h4>
+                <h4 class="bold">{{ weatherData[5].day }}</h4>
+            </div>
+            
+            <div class="vert-line"></div>
+        </div>
+    </div>
+    
+    <div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <div *ngFor="let image of images">
+                    <img *ngIf = "image.param === weatherData[6].image" [src] = "image.src" class="mx-3">
+                </div>
+                <h4>{{ weatherData[6].temp }}</h4>
+                <h4 class="bold">{{ weatherData[6].day }}</h4>
+            </div>
+            
+            <div class="vert-line-last"></div>
+        </div>
+    </div>
+    
+ </div>
+ 

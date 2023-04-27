@@ -1,0 +1,77 @@
+<div class="d-flex">
+    <app-pill-menu class="pill"></app-pill-menu>
+    <div class="d-flex flex-column">
+        <div class="d-flex rowdim justify-content-evenly mt-5">
+            <div class="sq d-flex flex-column">
+                <h1 class="topic mt-2 ms-3 mb-0">Diseased Plants</h1>
+                <div class="d-flex flex-row">
+                    <h1 class="info ms-3">51</h1>
+                    <div [ngClass]="pieIsUp ? 'triR' : 'triG'" class="mt-4 pt-2 ms-2"></div>
+                </div>
+        
+                <app-piechart [chartOption]="pieData"></app-piechart>
+            </div>
+        
+            <div class="sq d-flex flex-column">
+                <h1 class="topic mt-2 ms-3 mb-0">Severity of Diseases</h1>
+                <div class="d-flex flex-row">
+                    <h1 class="info ms-3">112%</h1>
+                    <div [ngClass]="lineIsUp ? 'triR' : 'triG'" class="tri mt-4 pt-2 ms-2"></div>
+                </div>
+                
+                <app-linechart [chartOption]="lineData"></app-linechart>
+            </div>
+    
+            <div class="sq d-flex flex-column">
+                <h1 class="topic mt-2 ms-3 mb-0">Detected Variations</h1>
+                <div class="d-flex flex-row">
+                    <h1 class="info ms-3">5</h1>
+                    <div [ngClass]="barIsUp ? 'triR' : 'triG'" class="tri mt-4 pt-2 ms-2"></div>
+                </div>
+                
+                <app-barchart [chartOption]="barData"></app-barchart>
+            </div>
+        </div>
+    
+        <div class="d-flex rowdim justify-content-evenly mt-5">
+            <div class="sq d-flex flex-column">
+                <h1 class="topic mt-2 ms-3 mb-0">Diseased Area</h1>
+                <div class="d-flex flex-row">
+                    <h1 class="info ms-3">15m<sup>2</sup></h1>
+                    <div [ngClass]="areaIsUp ? 'triR' : 'triG'" class="tri mt-4 pt-2 ms-2"></div>
+                </div>
+                <app-areachart [chartOption]="areaData"></app-areachart>
+                
+            </div>
+        
+            <div class="rect d-flex flex-column">
+                <h1 class="topic mt-2 ms-3 mb-0">Diseased Plant Information</h1>
+                
+                <div class="d-flex tablebox justify-content-center mx-4 mt-3">
+                    <table class="table table-striped w-100 ">
+                        <thead>
+                            <tr class="sticky-top">
+                                <th>Plant ID</th>
+                                <th>X Coord</th>
+                                <th>Y Coord</th>
+                                <th>Disease Name</th>
+                                <th>Severity Level</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let row of tableData">
+                                <td>{{row.plantID}}</td>
+                                <td>{{row.xCoord}}</td>
+                                <td>{{row.yCoord}}</td>
+                                <td>{{row.diseaseName}}</td>
+                                <td>{{row.severityLevel}}</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+    
+        </div>
+    </div>
+</div>

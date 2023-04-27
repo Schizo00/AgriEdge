@@ -1,0 +1,36 @@
+.icon-rect {
+    height: 95px;
+    width: 697px;
+}
+
+.vert-line {
+    height: 95px;
+    width: 1px;
+    background-color: black;
+}
+
+.image-container:not(.selected) {
+    margin: 0;
+    padding: 0;
+}
+
+.selected {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid blue;
+  }
+
+  .vert-line-last {
+    height: 95px;
+    width: 0px;
+    background-color: black;
+}
+
+img {
+    width: 50px;
+    height: auto;
+}
+
+.bold {
+    font-weight: bold;
+}

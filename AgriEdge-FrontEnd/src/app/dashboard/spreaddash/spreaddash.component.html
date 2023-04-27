@@ -1,0 +1,54 @@
+<div class="d-flex p-cont">
+    <app-pill-menu class="pill"></app-pill-menu>
+    <div class="d-flex flex-column">
+        <div class="d-flex rowdim justify-content-evenly mt-3">
+
+            <div class="rect d-flex flex-column">
+                <h1 class="topic mt-2 ms-3 mb-0">Disease Information</h1>
+                <div class="d-flex tablebox justify-content-center mx-4 mt-3">
+                    <table class="table table-striped w-100 ">
+                        <thead>
+                            <tr class="sticky-top">
+                                <th>Disease Name</th>
+                                <th>Affected Plants</th>
+                                <th>Severity Level</th>
+                                <th>Current Spread (m2)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let row of tableData">
+                                <td>{{row.disease}}</td>
+                                <td>{{row.affectedNoPlants}}</td>
+                                <td>{{row.severityLevel}}</td>
+                                <td>{{row.currentSpread}}</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+    
+        <div class="d-flex rowdim justify-content-center mt-5">
+            
+            <div class="rect2 d-flex flex-column justify-content-center align-items-center mt-0">
+                <select (change)="onSelected()" class="dropd" name="diseaseDrop" #diseaseDrop >
+                    <option *ngFor="let row of tableData" [value] = "row.disease">{{ row.disease }}</option>
+                </select>
+                <div class="d-flex rect3 flex-column">
+                    <h1 class="topic mt-2 ms-3 mb-0">Spread Forecast For The Upcoming Week</h1>
+                    <app-linechart [style]="{
+                        'position': 'relative',
+                        'width': '900px',
+                        'height': '350px',
+                        'top': '-30px'
+                      }" [chartOption]="lineData" class="ms-4"></app-linechart>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+</div>

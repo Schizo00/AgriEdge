@@ -1,0 +1,37 @@
+[
+   {
+     "image": "cloudy",
+     "temp": "31°C",
+     "day": "MON"
+   },
+   {
+     "image": "daycloudy",
+     "temp": "28°C",
+     "day": "TUE"
+   },
+   {
+     "image": "sunny",
+     "temp": "36°C",
+     "day": "WED"
+   },
+   {
+     "image": "rainy",
+     "temp": "23°C",
+     "day": "THU"
+   },
+   {
+     "image": "cloudy",
+     "temp": "29°C",
+     "day": "FRI"
+   },
+   {
+     "image": "daycloudy",
+     "temp": "27°C",
+     "day": "SAT"
+   },
+   {
+     "image": "sunny",
+     "temp": "34°C",
+     "day": "SUN"
+   }
+ ]
