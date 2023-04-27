@@ -23,6 +23,8 @@ import { FormsModule } from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { PlantdashService } from './plantdash/plantdash.service';
 
 
 
@@ -59,7 +61,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     MatSortModule,
     MatSelectModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
+  ],
+  providers: [
+    HttpClientModule,
+    PlantdashService
   ],
   exports: [
     PillMenuComponent,

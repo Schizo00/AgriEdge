@@ -2,6 +2,7 @@ import { AfterViewInit, Component, ViewChild } from '@angular/core';
 import { DataSource } from '@angular/cdk/table';
 import { EChartsOption } from 'echarts';
 import { PiechartComponent } from '../piechart/piechart.component';
+import { PlantdashService } from './plantdash.service';
 
 
 interface PlantInfo {
@@ -20,7 +21,7 @@ interface PlantInfo {
 })
 export class PlantdashComponent{
 
-
+  constructor(private service: PlantdashService) {}
   
   
   filePaths: string[] = ['assets/data/plantinfotable.json', 'assets/data/plantpiechart.json', 'assets/data/plantlinechart.json', 'assets/data/plantbarchart.json', 'assets/data/plantareachart.json']
@@ -39,7 +40,7 @@ export class PlantdashComponent{
   
   ngOnInit(): void {
     
-  
+    console.log(this.service.getData());
 
     fetch(this.filePaths[0])
     .then((response) => response.json())
