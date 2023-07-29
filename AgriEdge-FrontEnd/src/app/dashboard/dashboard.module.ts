@@ -28,6 +28,7 @@ import { PlantdashService } from './plantdash/plantdash.service';
 
 
 
+
 @NgModule({
   declarations: [
     PillMenuComponent,
@@ -41,7 +42,7 @@ import { PlantdashService } from './plantdash/plantdash.service';
     PiechartComponent,
     AreachartComponent,
     WeathertableComponent,
-    GaugechartComponent
+    GaugechartComponent,
   ],
   imports: [
     CommonModule,
@@ -62,11 +63,13 @@ import { PlantdashService } from './plantdash/plantdash.service';
     MatSortModule,
     MatSelectModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+  
   ],
   providers: [
     HttpClientModule,
-    PlantdashService
+    PlantdashService,
+  
   ],
   exports: [
     PillMenuComponent,

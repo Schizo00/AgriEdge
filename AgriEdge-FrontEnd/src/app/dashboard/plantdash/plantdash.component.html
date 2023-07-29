@@ -5,17 +5,17 @@
             <div class="sq d-flex flex-column">
                 <h1 class="topic mt-2 ms-3 mb-0">Diseased Plants</h1>
                 <div class="d-flex flex-row">
-                    <h1 class="info ms-3">51</h1>
+                    <h1 class="info ms-3">{{pieTopVal}}</h1>
                     <div [ngClass]="pieIsUp ? 'triR' : 'triG'" class="mt-4 pt-2 ms-2"></div>
                 </div>
         
-                <app-piechart [chartOption]="pieData"></app-piechart>
+                <app-piechart *ngIf="pieData" [chartOption]="pieData"></app-piechart>
             </div>
         
             <div class="sq d-flex flex-column">
                 <h1 class="topic mt-2 ms-3 mb-0">Severity of Diseases</h1>
                 <div class="d-flex flex-row">
-                    <h1 class="info ms-3">112%</h1>
+                    <h1 class="info ms-3">{{lineTopVal}}%</h1>
                     <div [ngClass]="lineIsUp ? 'triR' : 'triG'" class="tri mt-4 pt-2 ms-2"></div>
                 </div>
                 
@@ -25,7 +25,7 @@
             <div class="sq d-flex flex-column">
                 <h1 class="topic mt-2 ms-3 mb-0">Detected Variations</h1>
                 <div class="d-flex flex-row">
-                    <h1 class="info ms-3">5</h1>
+                    <h1 class="info ms-3">{{barTopVal}}</h1>
                     <div [ngClass]="barIsUp ? 'triR' : 'triG'" class="tri mt-4 pt-2 ms-2"></div>
                 </div>
                 
@@ -37,10 +37,10 @@
             <div class="sq d-flex flex-column">
                 <h1 class="topic mt-2 ms-3 mb-0">Diseased Area</h1>
                 <div class="d-flex flex-row">
-                    <h1 class="info ms-3">15m<sup>2</sup></h1>
+                    <h1 class="info ms-3">{{areaTopVal}}m<sup>2</sup></h1>
                     <div [ngClass]="areaIsUp ? 'triR' : 'triG'" class="tri mt-4 pt-2 ms-2"></div>
                 </div>
-                <app-areachart [chartOption]="areaData"></app-areachart>
+                <app-areachart [chartOption]="areaData" class="pt-4"></app-areachart>
                 
             </div>
         
@@ -59,7 +59,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr *ngFor="let row of tableData">
+                            <tr *ngFor="let row of plantInfoData">
                                 <td>{{row.plantID}}</td>
                                 <td>{{row.xCoord}}</td>
                                 <td>{{row.yCoord}}</td>

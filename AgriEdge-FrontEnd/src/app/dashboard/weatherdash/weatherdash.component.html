@@ -4,17 +4,17 @@
         <div class="d-flex rowdim justify-content-evenly mt-5">
             <div class="rect d-flex flex-column">
                 <h1 class="topic mt-2 ms-3 mb-0">Predicted Daily Weather Summary</h1>
-                <app-weathertable *ngIf="weatherData" [weatherData]="weatherData"></app-weathertable>
+                <app-weathertable *ngIf="weatherInfoData" [weatherData]="weatherInfoData"></app-weathertable>
             </div>
 
             <div class="sq d-flex flex-column">
                 <h1 class="topic mt-2 ms-3 mb-0">Humidity</h1>
                 <div class="d-flex flex-row">
                     <h1 class="info ms-3">71%</h1>
-                    <div [ngClass]="barIsUp ? 'triR' : 'triG'" class="tri mt-4 pt-2 ms-2"></div>
+                    <div [ngClass]="barIsUp1 ? 'triR' : 'triG'" class="tri mt-4 pt-2 ms-2"></div>
                 </div>
                 
-                <app-barchart [chartOption]="barData"></app-barchart>
+                <app-barchart [chartOption]="barData1"></app-barchart>
             </div>
         
             

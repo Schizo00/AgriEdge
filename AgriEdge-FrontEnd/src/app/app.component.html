@@ -2,13 +2,24 @@
   <div class="bg-card">
     <nav class="navbar-expand-sm">
         <div class="d-flex flex-row-reverse navigation">
-            <a href="#" class="p-2 mx-4" routerLink="/"><img src=".\assets\hamburgerMenu.svg" width="25px" height="16px" id="ham" alt="ham"></a>
-            <a href="#" class="p-2 ms-4" routerLink="/dashboard">dashboard</a>
+          <div class="dropdown">
+            <a href="#" class="p-2 mx-4 btn dropdown-toggle" role="button" id="dropdownMenuButton" routerLink="/"><img src=".\assets\hamburgerMenu.svg" width="25px" height="16px" id="ham" alt="ham"></a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+            
+            <a *ngIf="isLogged" href="#" class="p-2 ms-4" routerLink="/dashboard">dashboard</a>
             <a href="#" class="p-2 ms-4" routerLink="/features">features</a>
             <a href="#" class="p-2 ms-4" routerLink="/login">login</a>
             <a href="#" class="p-2 ms-2 ms-4 me-auto" routerLink="/"><img src=".\assets\Logo.svg" width="60px" height="37.5px" id="ham" alt="ham"></a>
+            
         </div>
     </nav>
+
+    
 
   <!-- <app-login-page></app-login-page> -->
   <!-- <app-dashboard></app-dashboard> -->

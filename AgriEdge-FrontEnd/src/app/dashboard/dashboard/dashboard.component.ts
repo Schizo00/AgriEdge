@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoginService } from 'src/login-service/login.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
+
+  constructor(private service: LoginService) {}
+
+
+  ngOnInit() {
+    console.log(this.service.authStateLogged())
+    console.log("Inside Dashboard")
+  }
 
 }

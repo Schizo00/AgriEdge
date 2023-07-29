@@ -7,11 +7,13 @@ import { PlantdashComponent } from './dashboard/plantdash/plantdash.component';
 import { WeatherdashComponent } from './dashboard/weatherdash/weatherdash.component';
 import { LivefeedComponent } from './dashboard/livefeed/livefeed.component';
 import { SpreaddashComponent } from './dashboard/spreaddash/spreaddash.component';
-
+import { LoginCardComponent } from './login-page/login-card/login-card.component';
+import { RegisterPageComponent } from './register-page/register-page/register-page.component';
 const routes: Routes = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
   {path: 'dashboard', redirectTo: 'dashboard/plantdash', pathMatch: 'full'},
-  {path: 'login', component: LoginPageComponent},
+  {path: 'login', component:LoginPageComponent},
+  {path: 'register', component:RegisterPageComponent},
   {path: 'dashboard', component: DashboardComponent},
   {path: 'features', component: FeaturesComponent},
   {path: 'dashboard/plantdash', component: PlantdashComponent},

@@ -1,14 +1,17 @@
 <div class="login-card-bg">
     <div class="pt-4">
-        <div class="py-3 mt-1 d-flex justify-content-center">
-            <input type="text" class="form-control" id="UsernameInput" placeholder="Username">
-        </div>
-        <div class="pb-3 d-flex justify-content-center">
-            <input type="password" class="form-control" id="PasswordInput" placeholder="Password">
-        </div>
-        <div class=" pb-3 d-flex justify-content-center">
-            <button type="button" class="btn" id="LoginButton" placeholder="Password">Login</button>
-        </div>
+        <form>
+            <div class="py-3 mt-1 d-flex justify-content-center">
+                <input type="email" (click)="resetInvalid('email')" (ngModel) = "invalidCreds" class="form-control" id="emailInput" #emailInput placeholder="Email">
+            </div>
+            <div class="pb-3 d-flex justify-content-center">
+                <input type="password" (click)="resetInvalid('password')" class="form-control" id="PasswordInput" #passInput placeholder="Password">
+            </div>
+            <div class=" pb-3 d-flex justify-content-center">
+                <button type="button" class="btn" id="LoginButton" (click)="loginButtonAction()" placeholder="Password">Login</button>
+                
+            </div>    
+        </form>  
         <div class="pb-1 d-flex justify-content-center">
             <a href="#">Forgotten Password?</a>
         </div>
@@ -17,7 +20,8 @@
             </div>
         </div>
         <div class="pb-3 d-flex justify-content-center">
-            <button type="button" class="btn" id="CreateAccButton" placeholder="Password">Create Account</button>
+            <button type="button" class="btn" id="CreateAccButton" (click)="registerRedirect()" placeholder="Password">Create Account</button>
         </div>
     </div>
 </div>
+
